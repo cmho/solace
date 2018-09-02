@@ -20,6 +20,15 @@ gem 'uglifier', '>= 1.3.0'
 # gem 'therubyracer', platforms: :ruby
 gem 'devise'
 gem 'thin'
+gem 'jquery-datatables-rails'
+gem 'wysiwyg-rails'
+gem 'breadcrumbs_on_rails'
+
+gem 'postmark-rails', '~> 0.15.0'
+
+gem 'activerecord-diff'
+gem 'rails-settings-cached'
+gem 'chart-js-rails'
 
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'

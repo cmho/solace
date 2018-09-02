@@ -6,4 +6,5 @@ class User < ApplicationRecord
          :confirmable
 
   validates :email, presence: true
+  has_many :characters
 end
