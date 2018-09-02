@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  description: MyString
+  requires_specification: false
+  requires_description: false
+  allowed_ratings: MyString
+
+two:
+  name: MyString
+  description: MyString
+  requires_specification: false
+  requires_description: false
+  allowed_ratings: MyString

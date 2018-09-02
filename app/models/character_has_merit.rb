@@ -1,0 +1,2 @@
+class CharacterHasMerit < ApplicationRecord
+end

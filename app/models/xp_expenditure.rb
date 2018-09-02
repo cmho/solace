@@ -1,0 +1,2 @@
+class XpExpenditure < ApplicationRecord
+end
