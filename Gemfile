@@ -23,6 +23,7 @@ gem 'thin'
 gem 'jquery-datatables-rails'
 gem 'wysiwyg-rails'
 gem 'breadcrumbs_on_rails'
+gem 'slim'
 
 gem 'postmark-rails', '~> 0.15.0'
 
