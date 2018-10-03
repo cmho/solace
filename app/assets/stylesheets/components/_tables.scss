@@ -1,0 +1,47 @@
+table.dataTable {
+    thead {
+        tr {
+            th {
+                text-align: left;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                padding-left: 10px;
+                border-bottom: 2px white solid;
+            }
+        }
+    }
+
+    tbody {
+        tr {
+            background-color: transparent;
+            border-bottom: 1px $yellow dashed;
+        }
+    }
+
+    &.no-footer {
+        border-bottom: 1px $yellow dashed;
+    }
+}
+
+.dataTables_wrapper {
+
+    .dataTables_length,
+    .dataTables_info,
+    .dataTables_processing,
+    .dataTables_paginate {
+        color: white;
+    }
+
+    .dataTables_paginate {
+        .paginate_button {
+
+            &.current,
+            &.current:hover {
+                background-color: $yellow;
+                color: white;
+                background-image: none;
+                font-weight: bold;
+            }
+        }
+    }
+}

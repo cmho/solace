@@ -24,6 +24,7 @@ gem 'jquery-datatables-rails'
 gem 'wysiwyg-rails'
 gem 'breadcrumbs_on_rails'
 gem 'slim'
+gem 'jquery-datatables-rails'
 
 gem 'postmark-rails', '~> 0.15.0'
 
