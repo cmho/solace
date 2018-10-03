@@ -10,6 +10,19 @@ html lang="en"
 
   body
     header
-      h1 Solace Character System
+      h1
+        | Solace 
+        span Character System
+      
+      nav
+        ul
+          li
+            a href="#" Link
+            ul
+              li
+                a href="#" Sub-Link
     main
-      = yield
+      .container
+        .row
+          .col-xs-12
+            = yield

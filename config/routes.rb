@@ -16,7 +16,7 @@ Rails.application.routes.draw do
   end
 
   namespace :storytellers do
-
+    resources :games
   end
 
   namespace :api do
