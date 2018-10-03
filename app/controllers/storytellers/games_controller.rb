@@ -34,6 +34,25 @@ module Storytellers
             end
         end
 
+        def downtime_actions
+            @downtime_actions = DowntimeAction.where({game_id: params[:id]}).group_by(:character)
+        end
+
+        def show_game_downtime
+            @downtime_action = DowntimeAction.find(params[:action_id])
+        end
+
+        def edit_game_downtime
+            @downtime_action = DowntimeAction.find(params[:action_id])
+            if @downtime_action.update_attributes!(downtime_action_params)
+                flash[:success] = "Updated downtime response successfully!"
+                redirect_to show_game_downtime_path(@downtime_action)
+            else
+                flash[:error] = "There was an error updating the downtime response."
+                redirect_to show_game_downtime_path(@downtime_action)
+            end
+        end
+
         protected
 
         def game_params
