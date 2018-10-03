@@ -20,6 +20,8 @@ Rails.application.routes.draw do
     get '/game/:id/downtimes', to: 'games#downtime_actions', as: 'game_downtimes'
     get '/game/:id/downtimes/:action_id', to: 'games#downtime_show', as: 'show_game_downtime'
     post '/game/:id/downtimes/:action_id', to: 'games#downtime_update', as: 'edit_game_downtime'
+
+    resources :merits
   end
 
   namespace :api do
