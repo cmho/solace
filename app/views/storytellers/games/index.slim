@@ -1,0 +1,11 @@
+h2 Games
+
+- if @games
+  ul#games-list
+    - @games.each do |game|
+      li
+        = link_to game.name, storytellers_game_path(game)
+        | (
+        = link_to "See Downtime Actions", game_downtimes_path(game)
+        | )
+        

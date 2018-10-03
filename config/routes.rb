@@ -17,6 +17,9 @@ Rails.application.routes.draw do
 
   namespace :storytellers do
     resources :games
+    get '/game/:id/downtimes', to: 'games#downtime_actions', as: 'game_downtimes'
+    get '/game/:id/downtimes/:action_id', to: 'games#downtime_show', as: 'show_game_downtime'
+    post '/game/:id/downtimes/:action_id', to: 'games#downtime_update', as: 'edit_game_downtime'
   end
 
   namespace :api do
